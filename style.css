@@ -1,0 +1,331 @@
+/* -----------------------------------------------------------
+ * GLOBAL VARIABLES & STYLES 
+ * ----------------------------------------------------------- */
+:root {
+    --gold-primary: #C8A24D;
+    --gold-gradient: linear-gradient(135deg, #C8A24D 0%, #E6CA83 50%, #B08932 100%);
+    --rich-black: #111111;
+    --ivory-cream: #F8F5EE;
+    --text-dark: #333333;
+    --serif-font: 'Cormorant Garamond', serif;
+    --sans-font: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--sans-font);
+    color: var(--text-dark);
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.serif-font { font-family: var(--serif-font); }
+.gold-text { color: var(--gold-primary); }
+.bg-cream { background-color: var(--ivory-cream); }
+.bg-black { background-color: var(--rich-black); }
+.tracking-widest { letter-spacing: 0.25em; }
+.tracking-wider { letter-spacing: 0.12em; }
+.py-6 { padding-top: 5rem; padding-bottom: 5rem; }
+.max-w-600 { max-width: 600px; }
+.max-w-700 { max-width: 700px; }
+.max-w-900 { max-width: 900px; }
+.max-w-300 { max-width: 300px; }
+.leading-loose { line-height: 1.8; }
+
+/* -----------------------------------------------------------
+ * LUXURY PRELOADER 
+ * ----------------------------------------------------------- */
+#preloader {
+    position: fixed;
+    top:0; left:0; width:100%; height:100%;
+    background-color: var(--rich-black);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s ease, visibility 0.6s;
+}
+.logo-text {
+    font-family: var(--serif-font);
+    font-weight: 700;
+    letter-spacing: 0.3em;
+}
+.gold-line {
+    width: 0; height: 1px;
+    background: var(--gold-gradient);
+    margin: 10px auto 0;
+    animation: load-line 1.5s forwards ease-in-out;
+}
+@keyframes load-line {
+    to { width: 120px; }
+}
+
+/* -----------------------------------------------------------
+ * NAVBAR 
+ * ----------------------------------------------------------- */
+.luxury-navbar {
+    background-color: rgba(17, 17, 17, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(200, 162, 77, 0.15);
+    padding: 1.2rem 0;
+    transition: all 0.4s;
+}
+.luxury-navbar .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 0.9rem;
+    text-uppercase: true;
+    letter-spacing: 0.12em;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+.luxury-navbar .nav-link:hover, .luxury-navbar .nav-link.active {
+    color: var(--gold-primary) !important;
+}
+.gold-hover { color: #fff; transition: color 0.3s; }
+.gold-hover:hover { color: var(--gold-primary); }
+.bg-gold { background-color: var(--gold-primary); }
+
+/* -----------------------------------------------------------
+ * HERO SECTION 
+ * ----------------------------------------------------------- */
+.hero-section {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+}
+.hero-bg-overlay {
+    position: absolute; top:0; left:0; width:100%; height:100%;
+    background: linear-gradient(to right, rgba(11,11,11,0.9) 30%, rgba(11,11,11,0.4) 100%);
+}
+
+/* Luxury Buttons */
+.btn-gold {
+    background: var(--gold-gradient);
+    color: var(--rich-black);
+    font-weight: 500;
+    border: none;
+    border-radius: 1px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(200, 162, 77, 0.3);
+    color: var(--rich-black);
+}
+.btn-outline-white {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #fff;
+    border-radius: 1px;
+    transition: all 0.3s;
+}
+.btn-outline-white:hover {
+    background-color: #fff; color: var(--rich-black);
+}
+
+/* -----------------------------------------------------------
+ * CARDS & ACCENTS 
+ * ----------------------------------------------------------- */
+.gold-divider {
+    width: 60px; height: 2px;
+    background: var(--gold-gradient);
+    margin-top: 1rem;
+}
+.glass-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(200, 162, 77, 0.2);
+}
+
+/* Collection Grid */
+.collection-card {
+    height: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+.collection-card img {
+    height: 100%; object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.collection-card:hover img { transform: scale(1.06); }
+.collection-overlay {
+    position: absolute; top:0; left:0; width:100%; height:100%;
+    background: linear-gradient(to top, rgba(17,17,17,0.85) 0%, rgba(17,17,17,0) 60%);
+}
+.gold-link {
+    color: var(--gold-primary); text-decoration: none;
+    font-size: 0.85rem; text-uppercase: true; letter-spacing: 0.1em;
+}
+
+/* Product Cards */
+.product-card {
+    border: 1px solid rgba(200,162,77,0.1);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+}
+.product-img-container { height: 260px; background-color: #fcfcfc; }
+.product-img-container img { height:100%; object-fit:contain; }
+.product-actions {
+    position: absolute; bottom: 10px; left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    opacity: 0; display: flex; gap: 8px; transition: all 0.3s ease;
+}
+.product-card:hover .product-actions {
+    opacity: 1; transform: translateX(-50%) translateY(0);
+}
+.btn-light-square {
+    background: #fff; border: 1px solid #eee; width: 40px; height: 40px;
+    display: flex; align-items: center; justify-content: center; color: var(--rich-black);
+}
+.btn-light-square:hover { background: var(--rich-black); color: #fff; }
+.btn-outline-gold {
+    border: 1px solid var(--gold-primary); color: var(--gold-primary);
+    border-radius: 1px; transition: all 0.3s;
+}
+.btn-outline-gold:hover { background: var(--gold-gradient); color: var(--rich-black); }
+
+/* -----------------------------------------------------------
+ * BRIDAL SHOWCASE 
+ * ----------------------------------------------------------- */
+.bridal-section {
+    height: 70vh;
+    background: url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;
+}
+.bridal-bg-overlay {
+    position: absolute; top:0; left:0; width:100%; height:100%;
+    background: rgba(17, 17, 17, 0.75);
+}
+.bridal-mini-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff; padding: 1.5rem;
+    font-family: var(--serif-font); font-size: 1.3rem;
+    transition: border-color 0.4s;
+}
+.bridal-mini-card:hover {
+    border-color: var(--gold-primary);
+}
+
+/* -----------------------------------------------------------
+ * REVEAL ANIMATIONS (SCROLL) 
+ * ----------------------------------------------------------- */
+.data-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s out, transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.data-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* -----------------------------------------------------------
+ * TRUST & SOCIAL SECTIONS 
+ * ----------------------------------------------------------- */
+.trust-icon-box i { font-size: 2.2rem; color: var(--gold-primary); margin-bottom: 1rem; }
+.trust-icon-box h6 { font-size: 0.85rem; font-weight: 500; text-uppercase: true; }
+.ig-card { height: 280px; }
+.ig-card img { height: 100%; object-fit: cover; }
+.ig-overlay {
+    position: absolute; top:0; left:0; width:100%; height:100%;
+    background: rgba(17, 17, 17, 0.6); opacity: 0;
+    display: flex; align-items: center; justify-content: center;
+    transition: opacity 0.3s;
+}
+.ig-card:hover .ig-overlay { opacity: 1; }
+
+/* -----------------------------------------------------------
+ * FORMS & FOOTER 
+ * ----------------------------------------------------------- */
+.luxury-input {
+    border: none; border-bottom: 1px solid #ccc;
+    border-radius: 0; padding: 0.8rem 0.4rem;
+    font-size: 0.9rem; background: transparent;
+}
+.luxury-input:focus {
+    box-shadow: none; border-color: var(--gold-primary); background: transparent;
+}
+.footer-links li { margin-bottom: 0.7rem; }
+.footer-links a { color: #aaa; text-decoration: none; transition: color 0.3s; }
+.footer-links a:hover { color: var(--gold-primary); }
+
+/* -----------------------------------------------------------
+ * LUXURY WHATSAPP FLOATING BUTTON
+ * ----------------------------------------------------------- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366; /* Official WhatsApp Green */
+    color: #FFF !important;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: whatsapp-pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    color: #FFF;
+}
+
+/* Tooltip text that appears on desktop hover */
+.whatsapp-tooltip {
+    position: absolute;
+    right: 75px;
+    background-color: #111111;
+    color: #C8A24D; /* Brand Gold */
+    font-family: var(--sans-font);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    padding: 6px 14px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border: 1px solid rgba(200, 162, 77, 0.3);
+}
+
+.whatsapp-float:hover .whatsapp-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Premium, non-intrusive pulse animation */
+@keyframes whatsapp-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 52px;
+        height: 52px;
+        font-size: 28px;
+    }
+    .whatsapp-tooltip {
+        display: none; /* Hide tooltip on mobile to avoid screen clutter */
+    }
+}

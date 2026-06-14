@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liya Jewels | Luxury & Premium Jewelry Boutique</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/embed.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Luxury Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🌟 PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-content text-center">
+            <h1 class="logo-text gold-text">LIYA JEWELS</h1>
+            <div class="gold-line"></div>
+        </div>
+    </div>
+
+    <!-- 🌟 NAVIGATION -->
+    <nav class="navbar navbar-expand-lg fixed-top luxury-navbar">
+        <div class="container">
+            <a class="navbar-brand logo-text gold-text" href="#">
+			<img src="liya.jpg" width="50"  >
+                       
+			</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#collections">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bestsellers">Best Sellers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bridal">Bridal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-icons d-flex align-items-center gap-3 text-white">
+                    <a href="#" class="gold-hover"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="gold-hover"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#" class="gold-hover position-relative">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-gold">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🌟 HERO SECTION -->
+    <section class="hero-section d-flex align-items-center position-relative overflow-hidden">
+        <div class="hero-bg-overlay"></div>
+        <!-- Simulated floating particles via pure CSS background trick -->
+        <div class="particles"></div> 
+        <div class="container position-relative z-3 text-center text-lg-start">
+            <div class="row align-items-center">
+                <div class="col-lg-8 data-reveal">
+                    <h5 class="text-uppercase gold-text tracking-widest mb-3">Exquisite Craftsmanship</h5>
+                    <h1 class="display-3 text-white serif-font mb-4">Crafted To Shine,<br>Designed To Last</h1>
+                    <p class="lead text-light-muted mb-5 max-w-600">Discover timeless jewelry collections crafted with elegance, purity, and unmatched craftsmanship.</p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                        <a href="#collections" class="btn btn-gold px-5 py-3 text-uppercase tracking-wider">Shop Collection</a>
+                        <a href="#bridal" class="btn btn-outline-white px-5 py-3 text-uppercase tracking-wider">Explore Bridal Jewelry</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 ABOUT LIYA JEWELS -->
+    <section id="about" class="about-section py-6 bg-cream">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 data-reveal">
+                    <div class="about-img-wrapper position-relative">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80" alt="Artisan Crafting Jewelry" class="img-fluid custom-shadow rounded-1">
+                        <div class="glass-card position-absolute bottom-0 end-0 p-4 m-4 d-none d-sm-block">
+                            <h4 class="serif-font gold-text mb-1">100% Certified</h4>
+                            <p class="small text-muted mb-0">BIS Hallmarked Purity</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 data-reveal">
+                    <h5 class="gold-text text-uppercase tracking-widest mb-2">Our Legacy</h5>
+                    <h2 class="serif-font mb-4 display-5 text-black">A Tradition of Purity and Elegance</h2>
+                    <p class="text-secondary leading-loose">At Liya Jewels, every piece is crafted with precision, passion, and purity. Our artisans blend traditional craftsmanship with contemporary design to create jewelry that celebrates every special moment.</p>
+                    <p class="text-secondary leading-loose mb-4">Inspired by timeless legacies, we promise a bespoke luxurious journey from raw gold to absolute masterpieces.</p>
+                    <div class="row g-4 mt-2">
+                        <div class="col-6">
+                            <h3 class="gold-text serif-font display-6 mb-0 count-up" data-target="25">0</h3>
+                            <small class="text-uppercase tracking-wider text-muted">Years of Trust</small>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="gold-text serif-font display-6 mb-0 count-up" data-target="150">0</h3>
+                            <small class="text-uppercase tracking-wider text-muted">Master Craftsmen</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 FEATURED COLLECTIONS -->
+    <section id="collections" class="collections-section py-6 bg-white">
+        <div class="container">
+            <div class="text-center mb-5 data-reveal">
+                <h5 class="gold-text text-uppercase tracking-widest mb-2">Curated Categories</h5>
+                <h2 class="serif-font display-5 text-black">Featured Collections</h2>
+                <div class="gold-divider mx-auto"></div>
+            </div>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4 data-reveal">
+                    <div class="collection-card overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80" class="img-fluid w-100" alt="Gold Necklaces">
+                        <div class="collection-overlay d-flex flex-column justify-content-end p-4">
+                            <h4 class="text-white serif-font">Gold Necklaces</h4>
+                            <a href="#" class="gold-link mt-2">Discover More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 data-reveal">
+                    <div class="collection-card overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=500&q=80" class="img-fluid w-100" alt="Bridal Sets">
+                        <div class="collection-overlay d-flex flex-column justify-content-end p-4">
+                            <h4 class="text-white serif-font">Bridal Sets</h4>
+                            <a href="#" class="gold-link mt-2">Discover More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 data-reveal">
+                    <div class="collection-card overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=500&q=80" class="img-fluid w-100" alt="Bangles">
+                        <div class="collection-overlay d-flex flex-column justify-content-end p-4">
+                            <h4 class="text-white serif-font">Bangles & Kadas</h4>
+                            <a href="#" class="gold-link mt-2">Discover More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-4 data-reveal">
+                    <div class="collection-card overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=500&q=80" class="img-fluid w-100" alt="Earrings">
+                        <div class="collection-overlay d-flex flex-column justify-content-end p-4">
+                            <h4 class="text-white serif-font">Elegant Earrings</h4>
+                            <a href="#" class="gold-link mt-2">Discover More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-4 data-reveal">
+                    <div class="collection-card overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=500&q=80" class="img-fluid w-100" alt="Rings">
+                        <div class="collection-overlay d-flex flex-column justify-content-end p-4">
+                            <h4 class="text-white serif-font">Statement Rings</h4>
+                            <a href="#" class="gold-link mt-2">Discover More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-4 data-reveal">
+                    <div class="collection-card overflow-hidden position-relative">
+                        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=500&q=80" class="img-fluid w-100" alt="Temple Jewelry">
+                        <div class="collection-overlay d-flex flex-column justify-content-end p-4">
+                            <h4 class="text-white serif-font">Temple Heritage</h4>
+                            <a href="#" class="gold-link mt-2">Discover More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 BEST SELLERS SECTION -->
+    <section id="bestsellers" class="bestsellers-section py-6 bg-cream">
+        <div class="container">
+            <div class="text-center mb-5 data-reveal">
+                <h5 class="gold-text text-uppercase tracking-widest mb-2">Most Loved Pieces</h5>
+                <h2 class="serif-font display-5 text-black">The Best Sellers</h2>
+                <div class="gold-divider mx-auto"></div>
+            </div>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-3 data-reveal">
+                    <div class="product-card bg-white p-3 rounded-1 position-relative">
+                        <span class="badge bg-gold position-absolute top-3 start-3">22K Purity</span>
+                        <div class="product-img-container overflow-hidden position-relative mb-3">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=400&q=80" class="img-fluid w-100 main-img" alt="Royal Choker">
+                            <div class="product-actions">
+                                <button class="btn btn-light-square"><i class="fa-regular fa-heart"></i></button>
+                                <button class="btn btn-light-square"><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <h6 class="serif-font font-size-lg mb-1">Aura Royal Gold Choker</h6>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="fw-bold text-black">$1,850.00</span>
+                            <button class="btn btn-sm btn-outline-gold"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-3 data-reveal">
+                    <div class="product-card bg-white p-3 rounded-1 position-relative">
+                        <span class="badge bg-gold position-absolute top-3 start-3">18K Purity</span>
+                        <div class="product-img-container overflow-hidden position-relative mb-3">
+                            <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=400&q=80" class="img-fluid w-100 main-img" alt="Diamond Ring">
+                            <div class="product-actions">
+                                <button class="btn btn-light-square"><i class="fa-regular fa-heart"></i></button>
+                                <button class="btn btn-light-square"><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <h6 class="serif-font font-size-lg mb-1">Empress Solitaire Band</h6>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="fw-bold text-black">$950.00</span>
+                            <button class="btn btn-sm btn-outline-gold"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-3 data-reveal">
+                    <div class="product-card bg-white p-3 rounded-1 position-relative">
+                        <span class="badge bg-gold position-absolute top-3 start-3">22K Purity</span>
+                        <div class="product-img-container overflow-hidden position-relative mb-3">
+                            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=400&q=80" class="img-fluid w-100 main-img" alt="Filigree Kada">
+                            <div class="product-actions">
+                                <button class="btn btn-light-square"><i class="fa-regular fa-heart"></i></button>
+                                <button class="btn btn-light-square"><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <h6 class="serif-font font-size-lg mb-1">Classic Antique Filigree Kada</h6>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="fw-bold text-black">$2,400.00</span>
+                            <button class="btn btn-sm btn-outline-gold"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-3 data-reveal">
+                    <div class="product-card bg-white p-3 rounded-1 position-relative">
+                        <span class="badge bg-gold position-absolute top-3 start-3">22K Purity</span>
+                        <div class="product-img-container overflow-hidden position-relative mb-3">
+                            <img src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=400&q=80" class="img-fluid w-100 main-img" alt="Jhumkas">
+                            <div class="product-actions">
+                                <button class="btn btn-light-square"><i class="fa-regular fa-heart"></i></button>
+                                <button class="btn btn-light-square"><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <h6 class="serif-font font-size-lg mb-1">Mayura Heritage Jhumkas</h6>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="fw-bold text-black">$1,120.00</span>
+                            <button class="btn btn-sm btn-outline-gold"><i class="fa-solid fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 BRIDAL COLLECTION SHOWCASE -->
+    <section id="bridal" class="bridal-section text-center position-relative overflow-hidden d-flex align-items-center">
+        <div class="bridal-bg-overlay"></div>
+        <div class="container position-relative z-3 data-reveal">
+            <h5 class="gold-text text-uppercase tracking-widest mb-3">The Eternal Knot</h5>
+            <h2 class="serif-font text-white display-3 mb-3">Celebrate Your Forever</h2>
+            <p class="text-light-muted max-w-600 mx-auto mb-5">Immerse yourself in spectacular legacy sets meticulously conceptualized for the high-end modern bride.</p>
+            <div class="row g-4 max-w-900 mx-auto justify-content-center">
+                <div class="col-md-4"><div class="bridal-mini-card">Bridal Necklaces</div></div>
+                <div class="col-md-4"><div class="bridal-mini-card">Wedding Jewelry Sets</div></div>
+                <div class="col-md-4"><div class="bridal-mini-card">Traditional Heritage</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 WHY CHOOSE US -->
+    <section class="why-choose-us py-6 bg-white">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-4 col-lg-2 data-reveal">
+                    <div class="trust-icon-box"><i class="fa-solid fa-award"></i><h6>Certified Jewelry</h6></div>
+                </div>
+                <div class="col-md-4 col-lg-2 data-reveal">
+                    <div class="trust-icon-box"><i class="fa-solid fa-gem"></i><h6>Premium Craftsmanship</h6></div>
+                </div>
+                <div class="col-md-4 col-lg-2 data-reveal">
+                    <div class="trust-icon-box"><i class="fa-solid fa-stamp"></i><h6>Hallmarked Gold</h6></div>
+                </div>
+                <div class="col-md-4 col-lg-2 data-reveal">
+                    <div class="trust-icon-box"><i class="fa-solid fa-shield-halved"></i><h6>Secure Payments</h6></div>
+                </div>
+                <div class="col-md-4 col-lg-2 data-reveal">
+                    <div class="trust-icon-box"><i class="fa-solid fa-earth-americas"></i><h6>Worldwide Shipping</h6></div>
+                </div>
+                <div class="col-md-4 col-lg-2 data-reveal">
+                    <div class="trust-icon-box"><i class="fa-solid fa-handshake-angle"></i><h6>Lifetime Support</h6></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 CUSTOMER TESTIMONIALS -->
+    <section class="testimonial-section py-6 bg-cream overflow-hidden">
+        <div class="container">
+            <div class="text-center mb-5 data-reveal">
+                <h5 class="gold-text text-uppercase tracking-widest mb-2">Voices of Trust</h5>
+                <h2 class="serif-font display-5 text-black">Client Testimonials</h2>
+                <div class="gold-divider mx-auto"></div>
+            </div>
+            
+            <div id="testimonialCarousel" class="carousel slide data-reveal" data-bs-ride="carousel">
+                <div class="carousel-inner max-w-700 mx-auto">
+                    <div class="carousel-item active text-center">
+                        <div class="testimonial-card bg-white p-5 shadow-sm rounded-1">
+                            <i class="fa-solid fa-quote-left display-6 gold-text mb-3"></i>
+                            <p class="lead text-secondary serif-font mb-4">"The custom bridal set created by Liya Jewels surpassed my wildest expectations. The purity is uncompromised and customer service was incredibly premier."</p>
+                            <h6 class="text-black mb-0">Sophia Rodriguez</h6>
+                            <small class="text-muted">New York, USA</small>
+                        </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <div class="testimonial-card bg-white p-5 shadow-sm rounded-1">
+                            <i class="fa-solid fa-quote-left display-6 gold-text mb-3"></i>
+                            <p class="lead text-secondary serif-font mb-4">"Unmatched finish and stellar shine. Buying 22K bangles online felt risky initially, but their hallmarked certificates and transparency instantly gave me full confidence."</p>
+                            <h6 class="text-black mb-0">Aishwarya Nair</h6>
+                            <small class="text-muted">Mumbai, India</small>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left text-dark fs-4"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-right text-dark fs-4"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 INSTAGRAM GALLERY -->
+    <section class="instagram-section py-6 bg-white">
+        <div class="container">
+            <div class="text-center mb-5 data-reveal">
+                <h5 class="gold-text text-uppercase tracking-widest mb-2">Follow Our Journey</h5>
+                <h2 class="serif-font display-5 text-black">#LiyaJewels on Instagram</h2>
+                <div class="gold-divider mx-auto"></div>
+            </div>
+            <div class="row g-2">
+                <div class="col-6 col-md-3 data-reveal">
+                    <div class="ig-card position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=400&q=80" class="img-fluid w-100" alt="Instagram Post">
+                        <div class="ig-overlay"><i class="fa-brands fa-instagram fs-2 text-white"></i></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 data-reveal">
+                    <div class="ig-card position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=400&q=80" class="img-fluid w-100" alt="Instagram Post">
+                        <div class="ig-overlay"><i class="fa-brands fa-instagram fs-2 text-white"></i></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 data-reveal">
+                    <div class="ig-card position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=400&q=80" class="img-fluid w-100" alt="Instagram Post">
+                        <div class="ig-overlay"><i class="fa-brands fa-instagram fs-2 text-white"></i></div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 data-reveal">
+                    <div class="ig-card position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=400&q=80" class="img-fluid w-100" alt="Instagram Post">
+                        <div class="ig-overlay"><i class="fa-brands fa-instagram fs-2 text-white"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 CONTACT & VISIT STORE -->
+    <section id="contact" class="contact-section py-6 bg-cream">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 data-reveal">
+                    <h5 class="gold-text text-uppercase tracking-widest mb-2">Connect With Us</h5>
+                    <h2 class="serif-font display-5 text-black mb-4">Book A Personalized Jewelry Consultation</h2>
+                    <ul class="list-unstyled space-y-4 mb-4 text-secondary">
+                        <li><i class="fa-solid fa-phone gold-text me-3"></i>+91 8667702209</li>
+                        <li><i class="fa-brands fa-whatsapp gold-text me-3"></i> Chat via WhatsApp, Location : Salem</li>
+                        <li><i class="fa-solid fa-envelope gold-text me-3"></i> elite@liyajewels.com</li>
+                        <li><i class="fa-solid fa-clock gold-text me-3"></i> Mon - Sat: 10:00 AM - 08:00 PM</li>
+                    </ul>
+                    <div class="map-wrapper shadow-sm rounded overflow-hidden">
+                       <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=salem,tamil nadu , india&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-googlemap.com">embed google maps in website</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}</style></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 data-reveal">
+                    <form class="bg-white p-5 rounded-1 shadow-sm custom-form">
+                        <div class="mb-3"><input type="text" class="form-control luxury-input" placeholder="Your Full Name" required></div>
+                        <div class="mb-3"><input type="email" class="form-control luxury-input" placeholder="Your Email Address" required></div>
+                        <div class="mb-3"><input type="tel" class="form-control luxury-input" placeholder="Your Contact Number"></div>
+                        <div class="mb-3">
+                            <select class="form-control luxury-input">
+                                <option>Select Consultation Type</option>
+                                <option>Bridal Collection Preview</option>
+                                <option>Customized Jewelry Design</option>
+                                <option>Virtual Showroom Tour</option>
+                            </select>
+                        </div>
+                        <div class="mb-4"><textarea class="form-control luxury-input" rows="4" placeholder="Share your preferences..."></textarea></div>
+                        <button type="submit" class="btn btn-gold w-100 py-3 text-uppercase tracking-wider">Request Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🌟 FOOTER -->
+    <footer class="bg-black text-white py-6 border-top border-gold-subtle">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3 class="logo-text gold-text mb-3">LIYA JEWELS</h3>
+                    <p class="text-muted text-sm max-w-300">Curating luxury experiences through exquisite jewelry masterpieces crafted to redefine absolute gold brilliance.</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="text-uppercase tracking-wider gold-text mb-3">Quick Links</h6>
+                    <ul class="list-unstyled footer-links text-sm">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="text-uppercase tracking-wider gold-text mb-3">Collections</h6>
+                    <ul class="list-unstyled footer-links text-sm">
+                        <li><a href="#">Gold Necklaces</a></li>
+                        <li><a href="#">Bridal Sets</a></li>
+                        <li><a href="#">Heritage Bangles</a></li>
+                        <li><a href="#">Bespoke Designs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-uppercase tracking-wider gold-text mb-3">The Liya Club</h6>
+                    <p class="text-muted text-sm">Subscribe to receive priority updates on collection launches.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control bg-transparent border-secondary text-white text-sm" placeholder="Your Email">
+                        <button class="btn btn-gold px-3"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                    <div class="d-flex gap-3 mt-4 text-muted fs-5">
+                        <a href="#" class="gold-hover"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="gold-hover"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="gold-hover"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-muted text-sm">
+                <p class="mb-0">&copy; 2026 Liya Jewels Boutique. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS Animations -->
+    <script src="script.js"></script>
+	<!-- ?? FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/918667702209?text=Hello%20Liya%20Jewels,%20I%20would%20like%20to%20inquire%20about%20your%20jewelry%20collections." 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+    <span class="whatsapp-tooltip">Consult an Expert</span>
+</a>
+</body>
+</html>
